@@ -60,7 +60,7 @@ Project ini dibuat untuk mempermudah proses antrean secara digital agar:
 
 # Fitur Utama
 
-## 👤 User Features
+## User Features
 
 - Ambil nomor antrean secara online
 - Melihat posisi antrean realtime
@@ -69,7 +69,7 @@ Project ini dibuat untuk mempermudah proses antrean secara digital agar:
 - Dashboard user modern
 - Responsive di mobile & desktop
 
-## 🛠️ Admin Features
+## Admin Features
 
 - Dashboard admin lengkap
 - Kelola antrean realtime
@@ -79,14 +79,14 @@ Project ini dibuat untuk mempermudah proses antrean secara digital agar:
 - Statistik antrean
 - Sistem notifikasi email
 
-## ⚡ Realtime System
+## Realtime System
 
 - Update antrean realtime menggunakan Supabase Realtime
 - Sinkronisasi otomatis antar client
 - Auto refresh posisi antrean
 - Tracking status antrean langsung
 
-## 📧 Email Notification
+## Email Notification
 
 - Email saat nomor antrean dibuat
 - Email saat giliran hampir tiba
