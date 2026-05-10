@@ -18,7 +18,7 @@ https://antrean-v1.vercel.app/
 
 ---
 
-# 🎯 Tujuan Project
+# Tujuan Project
 
 Project ini dibuat untuk mempermudah proses antrean secara digital agar:
 
@@ -31,7 +31,7 @@ Project ini dibuat untuk mempermudah proses antrean secara digital agar:
 
 ---
 
-# 🧠 Cara Kerja Sistem
+# Cara Kerja Sistem
 
 ## Flow User
 
@@ -58,7 +58,7 @@ Project ini dibuat untuk mempermudah proses antrean secara digital agar:
 
 ---
 
-# ✨ Fitur Utama
+# Fitur Utama
 
 ## 👤 User Features
 
@@ -95,7 +95,7 @@ Project ini dibuat untuk mempermudah proses antrean secara digital agar:
 
 ---
 
-# 🧰 Tech Stack
+# Tech Stack
 
 ## Frontend
 
@@ -123,7 +123,7 @@ Project ini dibuat untuk mempermudah proses antrean secara digital agar:
 
 ---
 
-# 🚀 Cara Install Project
+# Cara Install Project
 
 ## 1. Clone Repository
 
@@ -153,7 +153,7 @@ npm install
 
 ---
 
-# 🔑 Setup Environment Variables
+# Setup Environment Variables
 
 Buat file `.env.local`
 
@@ -197,7 +197,7 @@ clean_and_seed_database.sql
 
 ---
 
-# ▶️ Menjalankan Project
+# Menjalankan Project
 
 ## Development Mode
 
@@ -219,7 +219,7 @@ http://localhost:3000
 
 ---
 
-# ☁️ Deploy ke Vercel
+# Deploy ke Vercel
 
 ## 1. Push ke GitHub
 
@@ -284,7 +284,7 @@ Vercel akan otomatis build dan deploy aplikasi.
 
 ---
 
-# 📦 Build Production
+# Build Production
 
 ```bash
 pnpm build
@@ -304,7 +304,7 @@ pnpm start
 
 ---
 
-# 📡 Realtime Features
+# Realtime Features
 
 Project menggunakan:
 
@@ -322,7 +322,7 @@ hooks/use-realtime-lokets.ts
 
 ---
 
-# 🔐 Security
+# Security
 
 - Supabase RLS Policies
 - Environment Variables Protection
@@ -332,7 +332,7 @@ hooks/use-realtime-lokets.ts
 
 ---
 
-# 📱 Responsive Design
+# Responsive Design
 
 Aplikasi fully responsive:
 
@@ -342,7 +342,7 @@ Aplikasi fully responsive:
 
 ---
 
-# 📋 Scripts Available
+# Scripts Available
 
 ```bash
 pnpm dev
@@ -362,7 +362,7 @@ npm run lint
 
 ---
 
-# 🐞 Troubleshooting
+# Troubleshooting
 
 ## Build Error
 
@@ -403,72 +403,3 @@ Periksa:
 # 📄 License
 
 This project is licensed for personal and commercial use.
-
----
-
-# ⭐ Support
-
-Jika project ini membantu, jangan lupa beri ⭐ pada repository GitHub.
-cial use.
-
----
-
-# ⭐ Support
-
-Jika project ini membantu, jangan lupa beri ⭐ pada repository GitHub.
-rcel
-- Tailwind CSS
-
----
-
-# 📄 License
-
-This project is licensed for personal and commercial use.
-
----
-
-# ⭐ Support
-
-Jika project ini membantu, jangan lupa beri ⭐ pada repository GitHub.
-- SENDGRID_API_KEY
-- Verified Sender Email
-- SendGrid API Permissions
-
----
-
-# 📈 Future Improvements
-
-- Multi branch queue
-- QR Code check-in
-- WhatsApp notifications
-- AI queue prediction
-- Advanced analytics
-- Multi role management
-- Export reports PDF/Excel
-
----
-
-# 👨‍💻 Author
-
-Developed with ❤️ using:
-
-- Next.js
-- Supabase
-- Vercel
-- Tailwind CSS
-
----
-
-# 📄 License
-
-This project is licensed for personal and commercial use.
-
----
-
-# ⭐ Support
-
-Jika project ini membantu, jangan lupa beri ⭐ pada repository GitHub.
-ngan lupa beri ⭐ pada repository GitHub.
-membantu, jangan lupa beri ⭐ pada repository GitHub.
-ni membantu, jangan lupa beri ⭐ pada repository GitHub.
-i ⭐ pada repository GitHub.
