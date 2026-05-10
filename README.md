@@ -12,9 +12,7 @@ Website mendukung sistem antrean realtime multi-loket dengan sinkronisasi langsu
 
 ## Production URL
 
-```bash
 https://antrean-v1.vercel.app/
-```
 
 ---
 
