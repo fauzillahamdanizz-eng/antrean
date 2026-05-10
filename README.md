@@ -8,9 +8,7 @@ Website mendukung sistem antrean realtime multi-loket dengan sinkronisasi langsu
 
 ---
 
-# Live Production
-
-## Production URL
+## Live
 
 https://antrean-v1.vercel.app/
 
