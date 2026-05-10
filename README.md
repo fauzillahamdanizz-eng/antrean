@@ -8,7 +8,7 @@ Website mendukung sistem antrean realtime multi-loket dengan sinkronisasi langsu
 
 ---
 
-# 🌐 Live Production
+# Live Production
 
 ## Production URL
 
@@ -167,7 +167,7 @@ SENDGRID_FROM_EMAIL=your_email@example.com
 
 ---
 
-# 🗄️ Setup Database Supabase
+# Setup Database Supabase
 
 ## 1. Buat Project Supabase
 
@@ -400,6 +400,6 @@ Periksa:
 
 ---
 
-# 📄 License
+# License
 
 This project is licensed for personal and commercial use.
