@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antrian Segera Dipanggil</title>
+    <style>
+        body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; background-color: #f5f7fa; }
+        table { border-collapse: collapse; width: 100%; }
+        .container { max-width: 600px; margin: 0 auto; background-color: #ffffff; }
+        .header { background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); padding: 40px 20px; text-align: center; color: white; }
+        .header h1 { margin: 0; font-size: 28px; font-weight: 700; }
+        .alert-banner { background-color: #fef3c7; border-top: 4px solid #f97316; padding: 20px; margin: 20px 0; text-align: center; }
+        .alert-banner p { margin: 0; font-size: 18px; font-weight: 700; color: #92400e; }
+        .content { padding: 40px 20px; }
+        .queue-info { background-color: #fff7ed; border-left: 4px solid #f97316; padding: 20px; margin: 20px 0; border-radius: 4px; }
+        .queue-info-row { display: flex; justify-content: space-between; margin: 10px 0; font-size: 15px; }
+        .label { font-weight: 600; color: #475569; }
+        .value { color: #1e293b; font-weight: 700; font-size: 16px; }
+        .countdown { background-color: #f97316; color: white; padding: 20px; border-radius: 8px; text-align: center; margin: 20px 0; }
+        .countdown-time { font-size: 36px; font-weight: 700; margin: 10px 0; }
+        .button { display: inline-block; background-color: #f97316; color: white; padding: 14px 32px; text-decoration: none; border-radius: 6px; font-weight: 600; margin: 20px 0; }
+        .footer { background-color: #f8fafc; padding: 20px; text-align: center; font-size: 12px; color: #64748b; border-top: 1px solid #e2e8f0; }
+        .divider { height: 1px; background-color: #e2e8f0; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <table class="container">
+        <tr>
+            <td class="header">
+                <h1>⚠️ Antrian Segera Dipanggil!</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="content">
+                <div class="alert-banner">
+                    <p>SIAPKAN DIRI ANDA - NOMOR ANDA AKAN SEGERA DIPANGGIL</p>
+                </div>
+
+                <p style="margin: 0 0 20px 0; font-size: 16px; color: #1e293b;">Halo <strong>{{userName}}</strong>,</p>
+                
+                <p style="margin: 0 0 20px 0; font-size: 15px; color: #475569;">Nomor antrian Anda akan segera dipanggil untuk dilayani. Pastikan Anda sudah berada di lokasi layanan!</p>
+                
+                <div class="queue-info">
+                    <div class="queue-info-row">
+                        <span class="label">Layanan:</span>
+                        <span class="value">{{queueName}}</span>
+                    </div>
+                    <div class="queue-info-row">
+                        <span class="label">Nomor Antrian Anda:</span>
+                        <span class="value" style="font-size: 24px; color: #f97316;">{{queueNumber}}</span>
+                    </div>
+                    <div class="queue-info-row">
+                        <span class="label">Posisi Terdepan dalam:</span>
+                        <span class="value">~{{countdownTime}} detik</span>
+                    </div>
+                    <div class="queue-info-row">
+                        <span class="label">Loket/Window:</span>
+                        <span class="value">{{windowNumber}}</span>
+                    </div>
+                </div>
+
+                <div class="countdown">
+                    <p style="margin: 0 0 10px 0; font-size: 14px;">SIAP-SIAP!</p>
+                    <div class="countdown-time">DALAM HITUNGAN DETIK</div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="{{dashboardLink}}" class="button">Lihat Loket</a>
+                </div>
+
+                <div class="divider"></div>
+
+                <h3 style="margin: 20px 0 10px 0; font-size: 14px; color: #1e293b;">Apa yang Harus Anda Lakukan:</h3>
+                <ol style="margin: 10px 0; padding-left: 20px; font-size: 14px; color: #475569; line-height: 1.8;">
+                    <li>Datang ke loket/window yang tertera di atas</li>
+                    <li>Siapkan dokumen atau informasi yang diperlukan</li>
+                    <li>Tunggu hingga nama Anda dipanggil</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                <p style="margin: 0 0 10px 0;">Sistem Manajemen Antrian</p>
+                <p style="margin: 0;"><a href="{{unsubscribeLink}}" style="color: #f97316; text-decoration: none;">Kelola Preferensi Notifikasi</a></p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

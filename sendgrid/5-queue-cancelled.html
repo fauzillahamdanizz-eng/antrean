@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antrian Dibatalkan</title>
+    <style>
+        body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; background-color: #f5f7fa; }
+        table { border-collapse: collapse; width: 100%; }
+        .container { max-width: 600px; margin: 0 auto; background-color: #ffffff; }
+        .header { background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); padding: 40px 20px; text-align: center; color: white; }
+        .header h1 { margin: 0; font-size: 28px; font-weight: 700; }
+        .cancelled-badge { display: inline-block; background-color: #ef4444; color: white; padding: 12px 24px; border-radius: 8px; font-weight: 600; margin-bottom: 20px; }
+        .content { padding: 40px 20px; }
+        .info-box { background-color: #fef2f2; border-left: 4px solid #ef4444; padding: 20px; margin: 20px 0; border-radius: 4px; }
+        .queue-info-row { display: flex; justify-content: space-between; margin: 15px 0; font-size: 15px; }
+        .label { font-weight: 600; color: #475569; }
+        .value { color: #1e293b; font-weight: 700; font-size: 16px; }
+        .button { display: inline-block; background-color: #ef4444; color: white; padding: 14px 32px; text-decoration: none; border-radius: 6px; font-weight: 600; margin: 20px 0; }
+        .button-secondary { display: inline-block; background-color: #e5e7eb; color: #1f2937; padding: 14px 32px; text-decoration: none; border-radius: 6px; font-weight: 600; margin: 20px 0; }
+        .footer { background-color: #f8fafc; padding: 20px; text-align: center; font-size: 12px; color: #64748b; border-top: 1px solid #e2e8f0; }
+        .divider { height: 1px; background-color: #e2e8f0; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <table class="container">
+        <tr>
+            <td class="header">
+                <h1>✗ Antrian Dibatalkan</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="content">
+                <p style="margin: 0 0 20px 0; font-size: 16px; color: #1e293b;">Halo <strong>{{userName}}</strong>,</p>
+                
+                <p style="margin: 0 0 20px 0; font-size: 15px; color: #475569;">Antrian Anda telah dibatalkan. Berikut adalah detail informasi:</p>
+                
+                <div class="info-box">
+                    <div class="queue-info-row">
+                        <span class="label">Nomor Antrian:</span>
+                        <span class="value">{{queueNumber}}</span>
+                    </div>
+                    <div class="queue-info-row">
+                        <span class="label">Layanan:</span>
+                        <span class="value">{{queueName}}</span>
+                    </div>
+                    <div class="queue-info-row">
+                        <span class="label">Status:</span>
+                        <span class="cancelled-badge">DIBATALKAN</span>
+                    </div>
+                    <div class="queue-info-row">
+                        <span class="label">Alasan:</span>
+                        <span class="value">{{reason}}</span>
+                    </div>
+                    <div class="queue-info-row">
+                        <span class="label">Waktu Pembatalan:</span>
+                        <span class="value">{{cancelledTime}}</span>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <h3 style="margin: 20px 0 10px 0; font-size: 14px; color: #1e293b;">Apa yang Bisa Anda Lakukan?</h3>
+                <ul style="margin: 10px 0; padding-left: 20px; font-size: 14px; color: #475569; line-height: 1.8;">
+                    <li>Ambil nomor antrian baru di dashboard</li>
+                    <li>Hubungi tim dukungan jika ada pertanyaan</li>
+                    <li>Periksa informasi layanan terbaru</li>
+                </ul>
+
+                <p style="margin: 20px 0; font-size: 15px; color: #475569;">Jika Anda ingin mengambil antrian lagi, silakan kunjungi dashboard kami:</p>
+
+                <div style="text-align: center;">
+                    <a href="{{dashboardLink}}" class="button-secondary">Kembali ke Dashboard</a>
+                </div>
+
+                <div class="divider"></div>
+
+                <p style="margin: 0; font-size: 14px; color: #64748b; text-align: center;">Jika Anda memiliki pertanyaan, hubungi kami di <strong>support@queuemanagement.com</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                <p style="margin: 0 0 10px 0;">Sistem Manajemen Antrian</p>
+                <p style="margin: 0;"><a href="{{unsubscribeLink}}" style="color: #ef4444; text-decoration: none;">Kelola Preferensi Notifikasi</a></p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

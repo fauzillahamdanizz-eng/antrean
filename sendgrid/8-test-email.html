@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Test</title>
+    <style>
+        body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; background-color: #f5f7fa; }
+        table { border-collapse: collapse; width: 100%; }
+        .container { max-width: 600px; margin: 0 auto; background-color: #ffffff; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 40px 20px; text-align: center; color: white; }
+        .header h1 { margin: 0; font-size: 28px; font-weight: 700; }
+        .content { padding: 40px 20px; }
+        .test-badge { display: inline-block; background-color: #667eea; color: white; padding: 12px 24px; border-radius: 8px; font-weight: 600; margin-bottom: 20px; }
+        .info-box { background-color: #f0f9ff; border-left: 4px solid #667eea; padding: 20px; margin: 20px 0; border-radius: 4px; }
+        .info-row { margin: 12px 0; font-size: 15px; color: #475569; }
+        .label { font-weight: 600; }
+        .divider { height: 1px; background-color: #e2e8f0; margin: 20px 0; }
+        .footer { background-color: #f8fafc; padding: 20px; text-align: center; font-size: 12px; color: #64748b; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+    <table class="container">
+        <tr>
+            <td class="header">
+                <h1>✓ Email Test Berhasil</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="content">
+                <div style="text-align: center; margin: 20px 0;">
+                    <span class="test-badge">TESTING MODE</span>
+                </div>
+
+                <p style="margin: 0 0 20px 0; font-size: 16px; color: #1e293b;">Halo <strong>{{testUserName}}</strong>,</p>
+                
+                <p style="margin: 0 0 20px 0; font-size: 15px; color: #475569;">Email ini adalah test untuk memverifikasi bahwa sistem notifikasi email kami berfungsi dengan baik. Jika Anda menerima email ini, itu berarti konfigurasi SendGrid sudah benar!</p>
+                
+                <div class="info-box">
+                    <div class="info-row">
+                        <span class="label">Status Email:</span> ✓ Berhasil Terkirim
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Template:</span> Test Email
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Waktu Terkirim:</span> {{sentTime}}
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Email Tujuan:</span> {{recipientEmail}}
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <h3 style="margin: 20px 0 10px 0; font-size: 14px; color: #1e293b;">Apa Selanjutnya?</h3>
+                <ol style="margin: 10px 0; padding-left: 20px; font-size: 14px; color: #475569; line-height: 1.8;">
+                    <li>Verifikasi bahwa email ini terlihat dengan baik</li>
+                    <li>Periksa bahwa semua link bekerja dengan baik</li>
+                    <li>Test mengirim ke berbagai email client jika diperlukan</li>
+                    <li>Siap meluncurkan sistem ke production!</li>
+                </ol>
+
+                <div class="divider"></div>
+
+                <h3 style="margin: 20px 0 10px 0; font-size: 14px; color: #1e293b;">Info Teknis</h3>
+                <table style="font-size: 13px; color: #64748b; width: 100%;">
+                    <tr>
+                        <td style="padding: 5px 0;"><strong>Provider:</strong></td>
+                        <td style="text-align: right;">SendGrid</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px 0;"><strong>Template Version:</strong></td>
+                        <td style="text-align: right;">1.0.0</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px 0;"><strong>Rendering Engine:</strong></td>
+                        <td style="text-align: right;">Handlebars</td>
+                    </tr>
+                </table>
+
+                <p style="margin: 20px 0 0 0; font-size: 12px; color: #94a3b8; text-align: center;">Email test ini adalah bagian dari suite testing sistem manajemen antrian kami.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                <p style="margin: 0 0 10px 0;">Sistem Manajemen Antrian - Test Email</p>
+                <p style="margin: 0;"><a href="{{unsubscribeLink}}" style="color: #667eea; text-decoration: none;">Kelola Preferensi Notifikasi</a></p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
